@@ -1,0 +1,8 @@
+<div class="product-card">
+  <h3 appHighligth>{{ product.title | uppercase }}</h3>
+  <img [src]="product.image" [alt]="product.title" style="width: 200px; height: auto;">
+  <p class="price">Q{{ product.price }}</p>
+  <p class="description">{{ product.description }}</p>
+  <p class="date">{{ date | date }}</p>
+  <button (click)="addCart()" mat-flat-button color="primary">Agregar al carrito</button>
+</div>
